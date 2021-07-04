@@ -12,9 +12,6 @@ composer install
 php -S localhost:8000 -t public
 ```
 
-### Customize the configuration
-See [Configuring quasar.conf.js](https://v1.quasar.dev/quasar-cli/quasar-conf-js).
-
 # Lumen PHP Framework
 
 ## Official Documentation
