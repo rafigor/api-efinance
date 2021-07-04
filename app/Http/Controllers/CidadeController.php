@@ -27,7 +27,7 @@ class CidadeController extends Controller
     {
         $cidade = new Cidade;
         $cidade->nome = $request->nome;
-        $cidade->uf_id = $request->uf_id;
+        $cidade->estado_id = $request->estado_id;
 
         $cidade->save();
         return response()->json($cidade);
@@ -44,7 +44,7 @@ class CidadeController extends Controller
         $cidade = Cidade::find($id);
 
         $cidade->nome = $request->input('nome');
-        $cidade->uf_id = $request->input('uf_id');
+        $cidade->estado_id = $request->input('estado_id');
 
         $cidade->save();
         return response()->json($cidade);

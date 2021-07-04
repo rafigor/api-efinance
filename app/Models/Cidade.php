@@ -9,11 +9,11 @@ class  Cidade extends Model
     protected $table = 'cidades';
 
     protected $fillable = [
-        'nome', 'uf_id'
+        'nome', 'estado_id'
     ];
 
     public function estado()
     {
-        return $this->belongsTo(Estado::class, 'uf_id');
+        return $this->belongsTo(Estado::class, 'estado_id');
     }
 }

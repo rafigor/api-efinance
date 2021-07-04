@@ -17,10 +17,10 @@ class TbCidade extends Migration
         Schema::create('cidades', function (Blueprint $table) {
             $table->id();
             $table->string('nome',60)->nullable(false);
-            $table->unsignedBigInteger('uf_id');
+            $table->unsignedBigInteger('estado_id');
             $table->timestamps();
             //fk
-            $table->foreign('uf_id')->references('id')->on('estados');
+            $table->foreign('estado_id')->references('id')->on('estados');
         });
     }
 
